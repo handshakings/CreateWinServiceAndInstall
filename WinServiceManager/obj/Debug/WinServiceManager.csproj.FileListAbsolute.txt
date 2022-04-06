@@ -1,0 +1,10 @@
+E:\WindowsServiceAndInstaller\WinServiceManager\bin\Debug\WinServiceManager.exe.config
+E:\WindowsServiceAndInstaller\WinServiceManager\bin\Debug\WinServiceManager.exe
+E:\WindowsServiceAndInstaller\WinServiceManager\bin\Debug\WinServiceManager.pdb
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.csproj.AssemblyReference.cache
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.Form1.resources
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.Properties.Resources.resources
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.csproj.GenerateResource.cache
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.csproj.CoreCompileInputs.cache
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.exe
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.pdb

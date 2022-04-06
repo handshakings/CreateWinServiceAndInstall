@@ -1,0 +1,6 @@
+E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe.config
+E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe
+E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.pdb
+E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.csproj.CoreCompileInputs.cache
+E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.exe
+E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.pdb

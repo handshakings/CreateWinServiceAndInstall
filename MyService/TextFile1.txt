@@ -1,0 +1,9 @@
+﻿installing windows service with SC.exe or InstallUtil.exe - there is difference
+
+https://stackoverflow.com/questions/4692250/installing-windows-service-with-sc-exe-or-installutil-exe-there-is-difference
+
+
+sc.exe create MyService binPath= "F:\Delete\SampleSolution\Sample\WindowsServiceExample\bin\Debug\WindowsServiceExample.exe
+sc.exe delete MyService
+sc.exe start MyService
+sc.exe stop MyService
