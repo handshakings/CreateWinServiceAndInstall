@@ -58,6 +58,8 @@ namespace MyService
 
 
         //This method will receive int value between 128 and 255 only
+        //To communicate with outer world (outer appliction/web), you need to create TCP listener/socket to 
+        //receive incomming connections and responds
         protected override void OnCustomCommand(int command)
         {
             base.OnCustomCommand(command);

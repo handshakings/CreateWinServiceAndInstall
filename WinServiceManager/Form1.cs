@@ -93,6 +93,9 @@ namespace WinServiceManager
 
         //You cannot send data to a windows service. Only you can send int command between 128 to 255
         //For this You must ovrride onCustomCommand method in service
+
+        //To communicate with service from (outer appliction/web), you need to create TCP listener/socket in service to 
+        //receive incomming connections and responds
         private void SendCmdToRunningService(object sender, EventArgs e)
         {
             ServiceController serviceController = new ServiceController("Myservice");
