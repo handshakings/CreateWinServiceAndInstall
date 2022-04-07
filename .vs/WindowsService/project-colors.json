@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d935b992-1add-419f-9e2f-e20b50367e5e": {
+      "ProjectGuid": "d935b992-1add-419f-9e2f-e20b50367e5e",
+      "DisplayName": "WinServiceManager",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

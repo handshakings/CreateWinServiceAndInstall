@@ -1,6 +1,11 @@
 E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe.config
 E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe
 E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.pdb
+E:\WindowsServiceAndInstaller\MyService\bin\Debug\Newtonsoft.Json.dll
+E:\WindowsServiceAndInstaller\MyService\bin\Debug\Newtonsoft.Json.xml
+E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.csproj.AssemblyReference.cache
+E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.csproj.SuggestedBindingRedirects.cache
 E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.csproj.CoreCompileInputs.cache
+E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.csproj.CopyComplete
 E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.exe
 E:\WindowsServiceAndInstaller\MyService\obj\Debug\MyService.pdb

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration.Install;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,9 @@ namespace WinServiceManager
         public Form1()
         {
             InitializeComponent();
+            //You can start/stop/pause/uninstall any service by ServiceController
+            ServiceController[] services = ServiceController.GetServices();
+            //services.Where(service => service.ServiceName.ToLower() == "myservice" && service.Status == ServiceControllerStatus.Running).FirstOrDefault().Stop();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,59 +33,70 @@ namespace WinServiceManager
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void InstallService(object sender, EventArgs e)
         {
-            Process std = new Process();
-            ProcessStartInfo stdInfo = new ProcessStartInfo();
-            stdInfo.FileName = "cmd.exe";
-            stdInfo.Arguments = @"/c sc.exe create MyService binPath=" + label1.Text;
-            stdInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            stdInfo.CreateNoWindow = true;
-            std.StartInfo = stdInfo;
-            std.Start();
-            std.Close();
+            //ServiceManagerUsingWind32Dll.InstallAndStart("Myservice", "MyService", label1.Text);
+
+            //Install win service using sc.exe
+            //SC is a command line program used for communicating with the 
+            //Service Control Manager and services.
+            Process cmd = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/c sc.exe create MyService binPath=" + label1.Text + " start= auto ";
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.CreateNoWindow = true;
+            cmd.StartInfo = startInfo;
+            cmd.Start();
+            cmd.Close();  
         }
 
         
 
-        private void button3_Click(object sender, EventArgs e)
+        private void StartService(object sender, EventArgs e)
         {
-            Process std = new Process();
-            ProcessStartInfo stdInfo = new ProcessStartInfo();
-            stdInfo.FileName = "cmd.exe";
-            stdInfo.Arguments = @"/c sc.exe start MyService";
-            stdInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            stdInfo.CreateNoWindow = true;
-            std.StartInfo = stdInfo;
-            std.Start();
-            std.Close();
+            //ServiceManagerUsingWind32Dll.StartService(label1.Text);
+
+            Process cmd = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/c sc.exe start MyService";
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.CreateNoWindow = true;
+            cmd.StartInfo = startInfo;
+            cmd.Start();
+            cmd.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void StopService(object sender, EventArgs e)
         {
-            Process std = new Process();
-            ProcessStartInfo stdInfo = new ProcessStartInfo();
-            stdInfo.FileName = "cmd.exe";
-            stdInfo.Arguments = @"/c sc.exe stop MyService";
-            stdInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            stdInfo.CreateNoWindow = true;
-            std.StartInfo = stdInfo;
-            std.Start();
-            std.Close();
+            //ServiceManagerUsingWind32Dll.StopService(label1.Text);
+
+            Process cmd = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/c sc.exe stop MyService";
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.CreateNoWindow = true;
+            cmd.StartInfo = startInfo;
+            cmd.Start();
+            cmd.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void UninstallService(object sender, EventArgs e)
         {
-            Process std = new Process();
-            ProcessStartInfo stdInfo = new ProcessStartInfo();
-            stdInfo.FileName = "cmd.exe";
-            stdInfo.Arguments = @"/c sc.exe delete MyService";
-            stdInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            stdInfo.CreateNoWindow = true;
-            std.StartInfo = stdInfo;
-            std.Start();
-            std.Close();
-        }
+            //ServiceManagerUsingWind32Dll.Uninstall(label1.Text);
 
+            Process cmd= new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/c sc.exe delete MyService";
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.CreateNoWindow = true;
+            cmd.StartInfo = startInfo;
+            cmd.Start();
+            cmd.Close();
+        }
+ 
     }
 }

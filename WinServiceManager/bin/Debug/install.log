@@ -1,0 +1,28 @@
+﻿Installing assembly 'E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe'.
+Affected parameters are:
+   assemblypath = E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe
+   logfile = install.log
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe assembly.
+See the contents of the log file for the E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe assembly's progress.
+The file is located at install.log.
+Committing assembly 'E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = install.log
+   assemblypath = E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\WindowsServiceAndInstaller\MyService\bin\Debug\MyService.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe'.
+Affected parameters are:
+   assemblypath = E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe
+   logfile = install.log
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe assembly.
+See the contents of the log file for the E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe assembly's progress.
+The file is located at install.log.
+Committing assembly 'E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = install.log
+   assemblypath = E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\TaskScheduling\TaskScheduling\bin\Debug\TaskScheduling.exe assembly.
+Remove InstallState file because there are no installers.

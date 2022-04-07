@@ -8,3 +8,4 @@ E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.cspr
 E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.csproj.CoreCompileInputs.cache
 E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.exe
 E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.pdb
+E:\WindowsServiceAndInstaller\WinServiceManager\obj\Debug\WinServiceManager.csproj.SuggestedBindingRedirects.cache

@@ -34,13 +34,14 @@ namespace MyService
         private void working()
         {
             StreamWriter writer = new StreamWriter("e:\\abc.txt", true);
-            while(true)
+            int a = 0;
+            while(a < 100)
             {
                 writer.WriteLine("Service is called on " + DateTime.Now.ToString());
                 writer.Flush();
-                writer.Close();
-                Thread.Sleep(5000);
-            }  
+                a++;
+            }
+            writer.Close();
         }
 
         protected override void OnStop()
