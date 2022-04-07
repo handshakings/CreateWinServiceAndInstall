@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration.Install;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinServiceManager
@@ -97,6 +89,15 @@ namespace WinServiceManager
             cmd.Start();
             cmd.Close();
         }
- 
+
+
+        //You cannot send data to a windows service. Only you can send int command between 128 to 255
+        //For this You must ovrride onCustomCommand method in service
+        private void SendCmdToRunningService(object sender, EventArgs e)
+        {
+            ServiceController serviceController = new ServiceController("Myservice");
+            //you can send command from between 128 to 255
+            serviceController.ExecuteCommand(190);
+        }
     }
 }

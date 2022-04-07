@@ -1,12 +1,10 @@
 ﻿using System;
-using System.ComponentModel;
 using System.IO;
 using System.ServiceProcess;
 using System.Threading;
 
 namespace MyService
 {
-    [RunInstaller(true)]
     public partial class Service1 : ServiceBase
     {
         Thread worker = null;
@@ -14,7 +12,6 @@ namespace MyService
         {
             InitializeComponent();
         }
-
         protected override void OnStart(string[] args)
         {
             try
@@ -58,5 +55,17 @@ namespace MyService
                 throw;
             }
         }
+
+
+        //This method will receive int value between 128 and 255 only
+        protected override void OnCustomCommand(int command)
+        {
+            base.OnCustomCommand(command);
+            if (File.Exists("e:\\abc.txt"))
+            {
+                File.AppendAllText("e:\\abc.txt","Command received from window form app : " + command.ToString());
+            }
+        }
+
     }
 }
